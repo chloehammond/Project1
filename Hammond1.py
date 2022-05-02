@@ -3,10 +3,10 @@ import math
 
 def text_metrics():
     print('Which of the following would you like to do?')
-    print('1. Check your GFI')
-    print('2. Check your RES')
-    print('3. Check your SMOG')
-    print('4. Check your ARI')
+    print('1. Check your Gunning Fog Index')
+    print('2. Check your Reading Ease Score')
+    print('3. Check your SMOG Index Grade Level')
+    print('4. Check your Automated Readability Index')
     print('5. Quit')
 
 
