@@ -3,10 +3,12 @@ import csv
 
 
 class GUI:
-    def __init__(self, window):
+    """
+    Class to represent the GUI object
+    """
+    def __init__(self, window) -> None:
         """
-        - The code provided is meant to guide you on the dimensions used and variable names standards.
-        - Add the widgets responsible for the name, status, and save button.
+        Method to set the values for the GUI window
         """
         self.window = window
 
@@ -31,7 +33,7 @@ class GUI:
         self.entry_grade.pack(padx=16, side='left')
         self.frame_grade.pack(anchor='w', pady=10)
 
-        '''
+        """
         self.frame_middle = Frame(self.window)
         self.label_name3 = Label(self.frame_middle, text='Status')
         self.radio_1 = IntVar()
@@ -44,7 +46,7 @@ class GUI:
         self.radio_Staff.pack(side='left')
         self.radio_Both.pack(side='left')
         self.frame_middle.pack()
-        '''
+        """
 
         self.frame_middle = Frame(self.window)
         self.label_name3 = Label(self.frame_middle, text='Status')
@@ -62,7 +64,10 @@ class GUI:
         self.button_save.pack()
         self.frame_bottom.pack()
 
-    def clicked(self):
+    def clicked(self) -> None:
+        """
+        Method to work with the data that has been saved
+        """
         data = []
         name = self.entry_name.get()
         age = self.entry_age.get()

@@ -1,7 +1,7 @@
 from gui1 import *
 
 
-def main():
+def main() -> None:
     window = Tk()
     window.title('Hammond - Project 1')
     window.geometry('350x180')
@@ -12,4 +12,8 @@ def main():
 
 
 if __name__ == '__main__':
+    """
+    Function to call the main function, which accesses the GUI window
+    """
+
     main()
