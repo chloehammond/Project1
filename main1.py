@@ -1,9 +1,9 @@
-from gui import *
+from gui1 import *
 
 
 def main():
     window = Tk()
-    window.title('Lab 10')
+    window.title('Hammond - Project 1')
     window.geometry('350x180')
     widgets = GUI(window)
     window.resizable(False, False)
